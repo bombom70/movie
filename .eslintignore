@@ -1,0 +1,9 @@
+docs/
+dist
+packages/*/dist
+node_modules/
+package-lock.json
+.eslintrc
+*.config.js
+*.config.ts
+*.d.ts

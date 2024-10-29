@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/strongly-recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/vue3-essential",
+    "@vue/eslint-config-airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["import", "@typescript-eslint", "prettier"],
+  "ignorePatterns": ["dist/", "node_modules/", ".eslintrc"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "amd": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "tsconfigRootDir": "__dirname",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": ["**/tsconfig.json"],
+    "extraFileExtensions": [".vue"]
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [".js", ".json", ".ts", ".jsx", ".tsx", ".vue"]
+    }
+  },
+  "parser": "vue-eslint-parser",
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "vue/no-v-model-argument": "off",
+    "linebreak-style": "off",
+    "no-console": "error",
+    "import/prefer-default-export": "off",
+    "no-unused-expressions": "error",
+    "no-bitwise": [
+      "error",
+      {
+        "allow": ["~"]
+      }
+    ],
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-plusplus": "off",
+    "vue/multi-word-component-names": "off",
+    "prettier/prettier": ["error"],
+    "import/no-unresolved": "off",
+    "no-shadow": "off",
+    "no-useless-catch": "off",
+    "vuejs-accessibility/click-events-have-key-events": "off",
+    "vue/no-v-for-template-key": "off",
+    "vue/no-multiple-template-root": "off",
+    "vuejs-accessibility/form-control-has-label": "off",
+    "vue/no-setup-props-destructure": "off",
+    "vue/no-setup-props-reactivity-loss": "warn",
+    "consistent-return": "off"
+  }
+}
